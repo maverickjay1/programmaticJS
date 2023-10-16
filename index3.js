@@ -242,7 +242,7 @@ console.log(durationInMilliseconds);
 // 17. Write a function that returns an object with the years/months/days/hours/mins/secs/ms between 2 dates
 
 function getDateDiff(startDate, endDate) {
-  const timeDiff = endDate - startDate;
+  let timeDiff = endDate - startDate;
 
   const years = Math.floor(timeDiff / (365 * 24 * 60 * 60 * 1000));
   timeDiff -= years * (365 * 24 * 60 * 60 * 1000);
